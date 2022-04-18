@@ -44,46 +44,46 @@ a{
 }
 
 #par-img1{
-    left: 500px;
+    left: 100px;
     top: 500px;
 }
 
 #par-img2{
     right: 250px;
-    top: 250px;
+    top: 350px;
 }
 
 #par-img3{
-    right: 800px;
-    top: 800px;
+    right: 200px;
+    top: 600px;
 }
 
 #par-img4{
-    right: 500px;
-    top: 500px;
+    right: 200px;
+    top: 100px;
     transform: rotate(45deg);
 }
 
 #par-img5{
     left: 300px;
-    top: 250px;
+    top: 150px;
     transform: rotate(20deg);
 }
 
 #par-img6{
-    top: 200px;
+    top: 600px;
     left: 900px;
     transform: rotate(85deg);
 }
 
 #par-img7{
-    top: 800px;
-    right: 300px;
+    top: 100px;
+    right: 800px;
     transform: rotate(20deg);
 }
 
 #par-img8{
-    top: 750px;
+    top: 650px;
     left: 350px;
 }
 
@@ -143,11 +143,18 @@ a{
     font-weight: bold;
 }
 
+.intro-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
 .intro{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 35%;
+    width: 30%;
     height: 90vh;
     font-size: 28px;
     position: relative;
@@ -161,6 +168,7 @@ a{
 .intro p{
     font-size: 24px;
     font-weight: 600;
+    line-height: 1.8rem;
 }
 
 .intro-icons{
@@ -224,6 +232,68 @@ width: 90px;
   100%{
       transform: translateY(18px);
   }
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.project{
+    width: 60vw;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 1px 5px 8px #3e454c;
+    position: relative;
+    margin: 30px 0;
+    transition: all 0.3;
+}
+
+.project img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    transition: all 0.3s;
+    
+}
+
+.project:hover{
+    background-color: #000;
+}
+
+.project img:hover{
+    opacity: 0.3;
+}
+
+
+.project-description{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 0;
+}
+
+
+.project-description img{
+    height: 24px;
+    width: 24px;
+}
+
+.project-description h1{
+    margin-bottom: 5px;
+}
+
+.project-description p{
+    margin-bottom: 5px;
+}
+
+.description-links a{
+    margin-right: 5px;
 }
 
 
