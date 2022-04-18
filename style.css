@@ -1,0 +1,231 @@
+@font-face {
+    font-family: Franklin;
+    src: url(/assets/FranklinGothic.ttf);
+}
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color: #3e454c;
+    --background-color: #fff;
+}
+
+body{
+    color: var(--color);
+    background-color: var(--background-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--color);
+    transition: 0.3s;
+}
+
+.parallax-container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.parallax{
+    position: relative;
+}
+
+.par-img{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+}
+
+#par-img1{
+    left: 500px;
+    top: 500px;
+}
+
+#par-img2{
+    right: 250px;
+    top: 250px;
+}
+
+#par-img3{
+    right: 800px;
+    top: 800px;
+}
+
+#par-img4{
+    right: 500px;
+    top: 500px;
+    transform: rotate(45deg);
+}
+
+#par-img5{
+    left: 300px;
+    top: 250px;
+    transform: rotate(20deg);
+}
+
+#par-img6{
+    top: 200px;
+    left: 900px;
+    transform: rotate(85deg);
+}
+
+#par-img7{
+    top: 800px;
+    right: 300px;
+    transform: rotate(20deg);
+}
+
+#par-img8{
+    top: 750px;
+    left: 350px;
+}
+
+.navbar{
+    height: 7vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    width: 65vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a:hover{
+    color: #ea4f38;
+}
+
+.nav-right{
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+}
+
+.nav-right ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.nav-right img{
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-right img:hover{
+    transform: scale(0.85);
+}
+
+.tomato{
+    color: #ea4f38;
+}
+
+.content-container{
+    width: 65vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    height: 90vh;
+    font-size: 28px;
+    position: relative;
+}
+
+.intro h1{
+    font-size: 72px;
+    margin-bottom: 25px;
+}
+
+.intro p{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.intro-icons{
+margin-top: 15px;
+display: flex;
+justify-content: space-between;
+width: 90px;
+}
+
+.intro-icons img{
+    height: 24px;
+    width: 24px;
+    transition: 0.3s;
+}
+
+.intro-icons img:hover{
+    transform: scale(0.90);
+}
+
+.icon-scroll:before{
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+}
+
+.icon-scroll{
+    width: 25px;
+    height: 35px;
+    margin-left: -20px;
+    bottom: 1px;
+    left: 50%;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 2px #ea4f38;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 1;
+}
+
+.icon-scroll:before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #ea4f38;
+    margin-left: -2px;
+    top: 20%;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+    z-index: 1;
+}
+
+@keyframes scroll{
+  0%{
+    opacity: 1
+}
+  100%{
+    opacity: 0
+  }
+
+  100%{
+      transform: translateY(18px);
+  }
+}
+
+
+
+
