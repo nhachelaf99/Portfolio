@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -18,6 +19,8 @@
 body{
     color: var(--color);
     background-color: var(--background-color);
+    overflow-x: hidden;
+    transition: all 0.5s;
 }
 
 a{
@@ -129,6 +132,11 @@ a{
     transform: scale(0.85);
 }
 
+.nav-left img{
+    height: 60px;
+    width: 60px;
+}
+
 .tomato{
     color: #ea4f38;
 }
@@ -154,7 +162,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
+    width: 25%;
     height: 90vh;
     font-size: 28px;
     position: relative;
@@ -242,30 +250,26 @@ width: 90px;
 }
 
 .project{
-    width: 60vw;
-    height: 600px;
+    width: 50vw;
+    height: 500px;
     border-radius: 20px;
     box-shadow: 1px 5px 8px #3e454c;
     position: relative;
     margin: 30px 0;
     transition: all 0.3;
+    background-color: #000;
+    overflow: hidden;
 }
 
 .project img{
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    object-fit: cover;
     transition: all 0.3s;
-    
 }
 
-.project:hover{
-    background-color: #000;
-}
-
-.project img:hover{
+.project img.active{
     opacity: 0.3;
+    transform: scale(1.05);
 }
 
 
@@ -273,10 +277,17 @@ width: 90px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff;
     position: absolute;
-    bottom: 10%;
+    bottom: -20px;
     left: 5%;
-    z-index: 0;
+    opacity: 0;
+    transition: all 0.3s;
 }
+
+.project-description.active{
+    opacity: 100%;
+    bottom: 10px;
+}
+
 
 
 .project-description img{
@@ -284,18 +295,38 @@ width: 90px;
     width: 24px;
 }
 
+.project-description img:hover{
+    transform: scale(0.9);
+}
+
 .project-description h1{
+    margin-bottom: 5px;
+    font-size: 36px;
+}
+
+.project-description h3{
+    font-size: 16px;
+    font-weight: 600;
     margin-bottom: 5px;
 }
 
 .project-description p{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .description-links a{
     margin-right: 5px;
 }
 
+.footer img{
+    height: 60px;
+    width: 60px;
+}
 
 
-
+.dark-mode{
+    --background-color: #181818;
+    --color: #b3b3b3;
+}

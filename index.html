@@ -10,26 +10,26 @@
 <body>
     <div class="parallax-container">
         <div class="parallax">
-            <img src="/Portfolio/assets/circle.png" alt="" class="par-img" id="par-img1" data-value="2">
-            <img src="/Portfolio/assets/circle.png" alt="" class="par-img" id="par-img2" data-value="-2">
-            <img src="/Portfolio/assets/circle.png" alt="" class="par-img" id="par-img3" data-value="4">
-            <img src="/Portfolio/assets/triangle.png" alt="" class="par-img" id="par-img4" data-value="-4">
-            <img src="/Portfolio/assets/triangle.png" alt="" class="par-img" id="par-img5" data-value="6">
-            <img src="/Portfolio/assets/triangle.png" alt="" class="par-img" id="par-img6" data-value="-6">
-            <img src="/Portfolio/assets/gear.png" alt="" class="par-img" id="par-img7" data-value="8">
-            <img src="/Portfolio/assets/gear.png" alt="" class="par-img" id="par-img8" data-value="-8">
+            <img src="./assets/circle.png" alt="" class="par-img" id="par-img1" data-value="2">
+            <img src="./assets/circle.png" alt="" class="par-img" id="par-img2" data-value="-2">
+            <img src="./assets/circle.png" alt="" class="par-img" id="par-img3" data-value="4">
+            <img src="./assets/triangle.png" alt="" class="par-img" id="par-img4" data-value="-4">
+            <img src="./assets/triangle.png" alt="" class="par-img" id="par-img5" data-value="6">
+            <img src="./assets/triangle.png" alt="" class="par-img" id="par-img6" data-value="-6">
+            <img src="./assets/gear.png" alt="" class="par-img" id="par-img7" data-value="8">
+            <img src="./assets/gear.png" alt="" class="par-img" id="par-img8" data-value="-8">
         </div>
 </div>
     <div class="navbar">
         <div class="nav-left">
-            <a href="#"><img src="" alt="LOGO"></a>
+            <a href="#"><img src="/assets/NH-03.png" alt="LOGO"></a>
         </div>
         <div class="nav-right">
-            <ul>
+            <ul class="nav-right-list">
                 <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><img src="/Portfolio/assets/brightness.png" alt=""></li>
+                <li id="dark-btn-gray" class="dark-btn-gray"><img src="./assets/brightness gray.png" alt=""></li>
             </ul>
         </div>
     </div>
@@ -37,28 +37,60 @@
         <div id="intro-container" class="intro-container">
             <div class="intro" id="intro">
                 <h1>Hey<br><span class="tomato">I'm Nazim.</span></h1>
-                <p>I'm a <span class="tomato">Frontend Software Engineer </span><br>with a strong passion for building web applications with great user experiences.<br>Here's a bit more <span class="tomato">about me.</span></p>
+                <p>I'm a <span class="tomato">Frontend Software Engineer </span>with a strong passion for building web applications with great user experiences. <br>Here's a bit more <span class="tomato">about me.</span></p>
                 <div class="intro-icons">
-                    <a href="#" target="_blank"><img src="/Portfolio/assets/linkedin.png" alt=""></a>
-                    <a href="#" target="_blank"><img src="/Portfolio/assets/github.png" alt=""></a>
-                    <a href="#" target="_blank"><img src="/Portfolio/assets/acrobat.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="/assets/linkedin.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="./assets/github.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="./assets/acrobat.png" alt=""></a>
                 </div>
                 <div class='icon-scroll'></div>
             </div>
         </div>
         <div class="project-container" id="projects">
             <h1>Here are some of my <span class="tomato">projects</span></h1>
-            <div class="project">
-                <img src="/Portfolio/assets/dorousi mock.png" alt="">
-                <div class="project-description">
+            <div id="project1" class="project">
+                <img id="project-img1" src="./assets/dorousi pc.PNG" alt="">
+                <div id="project-desc1" class="project-description">
                     <h1>Doroussi</h1>
                     <h3>HTML, CSS, JS</h3>
                     <p>Algerian E-Learning website</p>
                     <div class="description-links">
-                        <a href="#"><img src="/Portfolio/assets/github white.png" alt=""></a>
-                        <a href="#"><img src="/Portfolio/assets/link.png" alt=""></a>
+                        <a href="#"><img src="./assets/github white.png" alt=""></a>
+                        <a href="#"><img src="./assets/link.png" alt=""></a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="project-container" id="projects">
+            <div id="project2" class="project">
+                <img id="project-img2" src="./assets/dorousi pc.PNG" alt="">
+                <div id="project-desc2" class="project-description">
+                    <h1>Doroussi</h1>
+                    <h3>HTML, CSS, JS</h3>
+                    <p>Algerian E-Learning website</p>
+                    <div class="description-links">
+                        <a href="#"><img src="./assets/github white.png" alt=""></a>
+                        <a href="#"><img src="./assets/link.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-column">
+            <div class="footer-logo">
+                <img src="/assets/NH-03.png" alt="">
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </div>
+            <div class="footer-under-text">
+                <p>Made by Nazim Hachelaf</p>
             </div>
         </div>
     </div>
