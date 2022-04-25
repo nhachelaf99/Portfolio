@@ -283,6 +283,59 @@ width: 90px;
   }
 }
 
+.about-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: #181818 0px 5px 8px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about-me{
+    width: 50%;
+    height: 100%;
+    color: #181818;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.about-me-content{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 15px;
+    
+}
+
+.tech-icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-form{
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    background-color: #181818;
+    padding: 10px;
+}
+
+.about-form-content{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.tech-icon img{
+    width: 40px;
+    height: 40px;
+}
+
 .project-container{
     display: flex;
     flex-direction: column;
