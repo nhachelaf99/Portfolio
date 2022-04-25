@@ -14,10 +14,15 @@ function parallax(e) {
 //DarkMode
 const body = document.body
 const darkBtnGray = document.getElementById("dark-btn-gray")
-const darkBtnWhite = document.getElementById("dark-btn-white")
 let darkState = localStorage.getItem("dark")
+const darkEnvelope = document.getElementById("envelope-black")
+const whiteEnvelope = document.getElementById("envelope-white")
 
-darkBtnGray.addEventListener("click", darkMode)
+
+darkBtnGray.addEventListener("click", () => {
+    darkMode();
+    envelopeContrast();
+})
 function darkMode() {
     body.classList.toggle("dark-mode")
     let darkState = localStorage.getItem("dark")
@@ -32,6 +37,26 @@ function darkMode() {
     }
 }
 
+function envelopeContrast() {
+    let darkState = localStorage.getItem("dark")
+    if (darkState == 1) {
+        darkEnvelope.classList.add("active")
+        whiteEnvelope.classList.remove("active")
+    }
+
+    if (darkState == 0) {
+        whiteEnvelope.classList.add("active")
+        darkEnvelope.classList.remove("active")
+    }
+
+    if (darkState == undefined) {
+        whiteEnvelope.classList.add("active")
+        darkEnvelope.classList.remove("active")
+    }
+}
+
+envelopeContrast()
+
 if (darkState == 1) {
     body.classList.add("dark-mode")
 }
@@ -39,6 +64,11 @@ if (darkState == 1) {
 if (darkState == 0) {
     body.classList.remove("dark-mode")
 }
+
+
+
+
+
 
 //Project Description
 const projectDesc1 = document.getElementById("project-desc1")
