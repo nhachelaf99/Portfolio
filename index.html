@@ -8,7 +8,7 @@
     <title>Nazim Hachelaf</title>
 </head>
 <body>
-    <div class="parallax-container">
+    <div class="parallax-container" id="parallax-container">
         <div class="parallax">
             <img src="./assets/circle.png" alt="" class="par-img" id="par-img1" data-value="2">
             <img src="./assets/circle.png" alt="" class="par-img" id="par-img2" data-value="-2">
@@ -20,30 +20,30 @@
             <img src="./assets/gear.png" alt="" class="par-img" id="par-img8" data-value="-8">
         </div>
     </div>
-<div class="envelope-container">
+<div class="envelope-container" id="form-opener1">
     <div class="envelopes">
         <div><img class="envelope envelope-black" id="envelope-black" src="./assets/letter black.png" alt=""></div>
         <div><img class="envelope envelope-white" id="envelope-white" src="./assets/letter white.png" alt=""></div>
     </div>
 </div>
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <div class="nav-left">
             <a href="#"><img src="./assets/NH-02.png" alt="LOGO"></a>
         </div>
         <div class="nav-right">
             <ul class="nav-right-list">
-                <li><a href="#">About</a></li>
+                <li id="form-opener2"><a href="#">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li id="form-opener3"><a href="#">Contact</a></li>
                 <li id="dark-btn-gray" class="dark-btn-gray"><img src="./assets/brightness gray.png" alt=""></li>
             </ul>
         </div>
     </div>
-    <div class="content-container">
+    <div class="content-container" id="content-container">
         <div id="intro-container" class="intro-container">
             <div class="intro" id="intro">
                 <h1>Hey<br><span class="tomato">I'm Nazim.</span></h1>
-                <p>I'm a <span class="tomato">Frontend Software Engineer </span>with a strong passion for building web applications with great user experiences. <br>Here's a bit more <span class="tomato">about me.</span></p>
+                <p>I'm a <span class="tomato">Frontend Software Engineer </span>with a strong passion for building web applications with great user experiences. <br>Here's a bit more <span class="tomato" id="form-opener4">about me.</span></p>
                 <div class="intro-icons">
                     <a href="#" target="_blank"><img src="./assets/linkedin.png" alt=""></a>
                     <a href="#" target="_blank"><img src="./assets/github.png" alt=""></a>
@@ -52,32 +52,40 @@
                 <div class='icon-scroll'></div>
             </div>
         </div>
-        <div class="about-container">
-            <div class="about-me">
+        <div class="about-container" id="about-container">
+            <div class="xbar" id="xbar">
+                <span class="xbar1"></span>
+                <span class="xbar2"></span>
+            </div>
+            <div class="about-me" id="about-me">
                 <div class="about-me-content">
-                    <h1>Here's a bit about me.</h1>
-                    <p class="form-subheader">Frontend Software Engineer</p>
-                    <p>I'm a 22 year-old Algerian <span class="tomato">frontend software engineer</span> with a strong passion
-                    for developing websites with great <span class="tomato">user experience.</span><br><br>
-                    I enjoy solving difficult engineering problems and I'm currently learning from a team consisting of some of
-                    the most <span class="tomato">talented</span> and <span class="tomato">experienced</span> software engineers every day.</p>
-                    <div class="tech-icon">
-                        <div class="tech-column">
-                            <img src="./assets/html-5.png" alt="">
-                            <p>HTML</p>
-                        </div>
-                        <div class="tech-column">
-                            <img src="./assets/css-3.png" alt="">
-                            <p>CSS</p>
-                        </div>
-                        <div class="tech-column">
-                            <img src="./assets/js.png" alt="">
-                            <p>JavaScript</p>
+                    <div class="text-info">
+                        <h1>Here's a bit about me.</h1>
+                        <p class="form-subheader">Frontend Software Engineer</p>
+                        <p>I'm a 22 year-old Algerian <span class="tomato">frontend software engineer</span> with a strong passion
+                        for developing websites with great <span class="tomato">user experience.</span><br><br>
+                        I enjoy solving difficult engineering problems and I'm currently learning from a team consisting of some of
+                        the most <span class="tomato">talented</span> and <span class="tomato">experienced</span> software engineers every day.</p>
+                    </div>
+                    <div class="tech-stack">
+                        <div class="tech-icon">
+                            <div class="tech-column">
+                                <img src="./assets/html-5.png" alt="">
+                                <p>HTML</p>
+                            </div>
+                            <div class="tech-column">
+                                <img src="./assets/css-3.png" alt="">
+                                <p>CSS</p>
+                            </div>
+                            <div class="tech-column">
+                                <img src="./assets/js.png" alt="">
+                                <p>JavaScript</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="about-form">
+            <div class="about-form" id="about-form">
                 <div class="about-form-content">
                     <h1>Let's have a chat!</h1>
                     <p class="form-subheader">I'm currently open to new opportunities.</p>
@@ -85,52 +93,57 @@
                         <form action="mailto:nhachelaf99@gmail.com" method="post" enctype=”multipart/form-data” name="portfolio-form">
                             <div class="form-section">
                                 <label for="name">Name</label>
-                                <input type="text" name="name" id="name">
+                                <input type="text" name="name" id="name" required>
                             </div>
                             <div class="form-section">
                                 <label for="email">Email</label>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" required>
                             </div>
                             <div class="form-section">
                                 <label for="message">Message</label>
-                                <textarea name="message" id="" cols="30" rows="10" form="portfolio-form"></textarea>
+                                <textarea name="message" id="" cols="30" rows="10" form="portfolio-form" required></textarea>
+                            </div>
+                            <div class="form-section">
+                                <button type="submit">Send it my way</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="project-container" id="projects">
-            <h1>Here are some of my <span class="tomato">projects</span></h1>
-            <div id="project1" class="project">
-                <img id="project-img1" src="./assets/dorousi pc.PNG" alt="">
-                <div id="project-desc1" class="project-description">
-                    <h1>Doroussi</h1>
-                    <h3>HTML, CSS, JS</h3>
-                    <p>Algerian E-Learning website</p>
-                    <div class="description-links">
-                        <a href="#"><img src="./assets/github white.png" alt=""></a>
-                        <a href="#"><img src="./assets/link.png" alt=""></a>
+        <div id="projects" class="projects-container">
+            <div class="project-container">
+                <h1>Here are some of my <span class="tomato">projects</span></h1>
+                <div id="project1" class="project">
+                    <img id="project-img1" src="./assets/dorousi pc.PNG" alt="">
+                    <div id="project-desc1" class="project-description">
+                        <h1>Doroussi</h1>
+                        <h3>HTML, CSS, JS</h3>
+                        <p>Algerian E-Learning website</p>
+                        <div class="description-links">
+                            <a href="#"><img src="./assets/github white.png" alt=""></a>
+                            <a href="#"><img src="./assets/link.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="project-container" id="projects">
-            <div id="project2" class="project">
-                <img id="project-img2" src="./assets/dorousi pc.PNG" alt="">
-                <div id="project-desc2" class="project-description">
-                    <h1>Doroussi</h1>
-                    <h3>HTML, CSS, JS</h3>
-                    <p>Algerian E-Learning website</p>
-                    <div class="description-links">
-                        <a href="#"><img src="./assets/github white.png" alt=""></a>
-                        <a href="#"><img src="./assets/link.png" alt=""></a>
+            <div class="project-container">
+                <div id="project2" class="project">
+                    <img id="project-img2" src="./assets/dorousi pc.PNG" alt="">
+                    <div id="project-desc2" class="project-description">
+                        <h1>Doroussi</h1>
+                        <h3>HTML, CSS, JS</h3>
+                        <p>Algerian E-Learning website</p>
+                        <div class="description-links">
+                            <a href="#"><img src="./assets/github white.png" alt=""></a>
+                            <a href="#"><img src="./assets/link.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="footer-column">
             <div class="footer-logo">
                 <img src="./assets/NH-02.png" alt="">
@@ -139,7 +152,7 @@
                 <ul>
                     <li><a href="#">GitHub</a></li>
                     <li><a href="#">Linkedin</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li id="form-opener5"><a href="#">Contact</a></li>
                     <li><a href="#">Resume</a></li>
                 </ul>
             </div>

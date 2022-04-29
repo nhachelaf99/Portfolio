@@ -67,9 +67,6 @@ if (darkState == 0) {
 
 
 
-
-
-
 //Project Description
 const projectDesc1 = document.getElementById("project-desc1")
 const Project1 = document.getElementById("project1")
@@ -102,3 +99,67 @@ function ProjectUnhover2() {
     projectDesc2.classList.remove("active")
     projectImg2.classList.remove("active")
 }
+
+//Form Opener
+const formOpener1 = document.getElementById("form-opener1")
+const formOpener2 = document.getElementById("form-opener2")
+const formOpener3 = document.getElementById("form-opener3")
+const formOpener4 = document.getElementById("form-opener4")
+const formOpener5 = document.getElementById("form-opener5")
+const aboutContainer = document.getElementById("about-container")
+const aboutMe = document.getElementById("about-me")
+const aboutForm = document.getElementById("about-form")
+const xbar = document.getElementById("xbar")
+const parallaxContainer = document.getElementById("parallax-container")
+const navbar = document.getElementById("navbar")
+const footer = document.getElementById("footer")
+const projects = document.getElementById("projects")
+
+formOpener1.addEventListener("click", toggleForm)
+function toggleForm() {
+    aboutContainer.classList.toggle("active")
+    aboutForm.classList.toggle("active")
+    aboutMe.classList.toggle("active")
+    xbar.classList.toggle("active")
+    parallaxContainer.classList.toggle("active")
+    navbar.classList.toggle("active")
+    footer.classList.toggle("active")
+    projects.classList.toggle("active")
+    intro.classList.toggle("active")
+    body.classList.toggle("active")
+}
+
+formOpener2.addEventListener("click", openForm)
+formOpener3.addEventListener("click", openForm)
+formOpener4.addEventListener("click", openForm)
+formOpener5.addEventListener("click", openForm)
+function openForm() {
+    aboutContainer.classList.add("active")
+    aboutForm.classList.add("active")
+    aboutMe.classList.add("active")
+    xbar.classList.add("active")
+    parallaxContainer.classList.add("active")
+    navbar.classList.add("active")
+    footer.classList.add("active")
+    projects.classList.add("active")
+    intro.classList.add("active")
+    body.classList.add("active")
+}
+
+
+projects.addEventListener("click", closeForm)
+xbar.addEventListener("click", closeForm)
+function closeForm() {
+    aboutContainer.classList.remove("active")
+    aboutForm.classList.remove("active")
+    aboutMe.classList.remove("active")
+    xbar.classList.remove("active")
+    parallaxContainer.classList.remove("active")
+    navbar.classList.remove("active")
+    footer.classList.remove("active")
+    projects.classList.remove("active")
+    intro.classList.remove("active")
+    body.classList.remove("active")
+}
+
+
