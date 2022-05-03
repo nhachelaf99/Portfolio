@@ -163,3 +163,20 @@ function closeForm() {
 }
 
 
+//Form Sender
+const submitButton = document.getElementById("submit")
+let textAreaMessage = document.getElementById("message").textContent
+let inputMessage = document.getElementById("msg").value
+
+submitButton.addEventListener("mouseover", () =>{
+    valueSwap
+})
+
+function valueSwap() {
+    let textAreaMessage = document.getElementById("message").textContent
+    let inputMessage = document.getElementById("msg").value
+    
+}
+
+console.log(textAreaMessage);
+console.log(inputMessage);

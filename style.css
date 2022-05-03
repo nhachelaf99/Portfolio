@@ -20,7 +20,7 @@ body{
     color: var(--color);
     background-color: var(--background-color);
     overflow-x: hidden;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 body.active{
@@ -493,6 +493,7 @@ width: 90px;
     transition: all 0.4s;
     font-size: 14px;
     color: #fff;
+    
 }
 
 .form-section textarea:focus{
@@ -555,6 +556,10 @@ width: 90px;
 }
 
 .form-closer{
+    cursor: pointer;
+}
+
+#form-opener4{
     cursor: pointer;
 }
 
@@ -685,4 +690,213 @@ width: 90px;
 .dark-mode{
     --background-color: #181818;
     --color: #b3b3b3;
+}
+
+@media screen and (max-width: 800px) {
+    *{
+        overflow-x: hidden;
+    }
+    
+    html {
+        overflow-x: hidden;
+    }
+    
+    body{
+        width: 100vw;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .parallax{
+        width: 100vw;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+
+    .nav-right{
+        width: 70%;
+        font-size: 16px;
+    }
+
+    .nav-left{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-left img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .content-container{
+        margin: 0;
+        width: 100%;
+    }
+
+    .intro-container{
+        width: 90%;
+        transition: all 0.75s;
+    }
+
+    .intro{
+        width: 100%;
+    }
+
+    .intro h1{
+        font-size: 52px;
+    }
+
+    .intro p{
+        font-size: 20px;
+    }
+
+    .about-container{
+        width: 90%;
+    }
+
+    .projects{
+        width: 90%;
+        height: 100%;
+    }
+
+    .project-container{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .project-container h1{
+        font-size: 24px;
+    }
+
+    .project{
+        width: 100%;
+        height: 200px;
+    }
+
+
+    .footer-column{
+        width: 100%;
+    }
+
+    .envelope-container{
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .about-container{
+        height: 95vh;
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .about-me{
+        height: 50%;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        top: 0;
+        left: -1500px;
+        padding-bottom: 0;
+    }
+
+    .about-me-content{
+        height: 95%;
+        width: 90%;
+        margin: 5px auto;
+    }
+
+    .text-info h1{
+        font-size: 24px;
+    }
+
+    .text-info p{
+        font-size: 14px;
+    }
+
+    .form-subheader{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .tech-stack{
+        margin-top: 30px;
+    }
+
+    .tech-icon{
+        height: 100%;
+    }
+
+    .about-form{
+        height: 50%;
+        width: 100%;
+        bottom: 0;
+        right: -1500px;
+        padding-bottom: 0;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .about-form-content{
+        height: 95%;
+        width: 90%;
+        margin: 5px auto;
+    }
+
+    .about-form-content h1{
+        font-size: 24px;
+    }
+
+    .form-section{
+        font-size: 14px;
+    }
+
+    .form-section textarea{
+        height: 65px;
+    }
+
+    .about-me.active{
+        top: 0px;
+        left: 0px;
+    }
+
+    .about-form.active{
+        bottom: 0px;
+        right: 0px;
+    }
+    
+    .footer-nav li{
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    .footer-under-text{
+        font-size: 14px;
+    }
+
+    .xbar{
+        color: #000;
+        right: 1501px;
+        top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .xbar1{
+        background-color: #000;
+        transform: translateY(3px) rotate(-45deg);
+    }
+
+    .xbar2{
+        background-color: #000;
+        transform: translateY(0px) rotate(45deg);
+    }
+
+    .xbar.active{
+        right: 1;
+    }
 }
