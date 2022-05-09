@@ -100,6 +100,22 @@ function ProjectUnhover2() {
     projectImg2.classList.remove("active")
 }
 
+const projectDesc3 = document.getElementById("project-desc3")
+const Project3 = document.getElementById("project3")
+const projectImg3 = document.getElementById("project-img3")
+
+Project3.addEventListener("mouseover", ProjectOverlay3);
+    function ProjectOverlay3() {
+    projectDesc3.classList.add("active")
+    projectImg3.classList.add("active")
+}
+
+Project3.addEventListener("mouseout", ProjectUnhover3)
+function ProjectUnhover3() {
+    projectDesc3.classList.remove("active")
+    projectImg3.classList.remove("active")
+}
+
 //Form Opener
 const formOpener1 = document.getElementById("form-opener1")
 const formOpener2 = document.getElementById("form-opener2")
@@ -164,19 +180,6 @@ function closeForm() {
 
 
 //Form Sender
-const submitButton = document.getElementById("submit")
-let textAreaMessage = document.getElementById("message").textContent
-let inputMessage = document.getElementById("msg").value
 
-submitButton.addEventListener("mouseover", () =>{
-    valueSwap
-})
 
-function valueSwap() {
-    let textAreaMessage = document.getElementById("message").textContent
-    let inputMessage = document.getElementById("msg").value
-    
-}
 
-console.log(textAreaMessage);
-console.log(inputMessage);
