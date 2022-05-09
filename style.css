@@ -769,6 +769,10 @@ width: 90px;
         margin: 0 auto;
     }
 
+    .project-description{
+        width: 80%;
+    }
+
     .project-container h1{
         font-size: 24px;
     }
