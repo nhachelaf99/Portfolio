@@ -100,6 +100,22 @@ function ProjectUnhover2() {
     projectImg2.classList.remove("active")
 }
 
+const projectDesc3 = document.getElementById("project-desc3")
+const Project3 = document.getElementById("project3")
+const projectImg3 = document.getElementById("project-img3")
+
+Project3.addEventListener("mouseover", ProjectOverlay3);
+    function ProjectOverlay1() {
+    projectDesc3.classList.add("active")
+    projectImg3.classList.add("active")
+}
+
+Project1.addEventListener("mouseout", ProjectUnhover3)
+function ProjectUnhover1() {
+    projectDesc3.classList.remove("active")
+    projectImg3.classList.remove("active")
+}
+
 
 //Form Opener
 const formOpener1 = document.getElementById("form-opener1")
