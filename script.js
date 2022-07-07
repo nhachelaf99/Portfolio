@@ -110,7 +110,7 @@ Project3.addEventListener("mouseover", ProjectOverlay3);
     projectImg3.classList.add("active")
 }
 
-Project1.addEventListener("mouseout", ProjectUnhover3)
+Project3.addEventListener("mouseout", ProjectUnhover3)
 function ProjectUnhover1() {
     projectDesc3.classList.remove("active")
     projectImg3.classList.remove("active")
