@@ -105,13 +105,13 @@ const Project3 = document.getElementById("project3")
 const projectImg3 = document.getElementById("project-img3")
 
 Project3.addEventListener("mouseover", ProjectOverlay3);
-    function ProjectOverlay1() {
+    function ProjectOverlay3() {
     projectDesc3.classList.add("active")
     projectImg3.classList.add("active")
 }
 
 Project3.addEventListener("mouseout", ProjectUnhover3)
-function ProjectUnhover1() {
+function ProjectUnhover3() {
     projectDesc3.classList.remove("active")
     projectImg3.classList.remove("active")
 }
