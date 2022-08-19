@@ -68,6 +68,22 @@ if (darkState == 0) {
 
 
 //Project Description
+const projectDesc4 = document.getElementById("project-desc4")
+const Project4 = document.getElementById("project4")
+const projectImg4 = document.getElementById("project-img4")
+
+Project4.addEventListener("mouseover", ProjectOverlay4);
+    function ProjectOverlay4() {
+    projectDesc4.classList.add("active")
+    projectImg4.classList.add("active")
+}
+
+Project4.addEventListener("mouseout", ProjectUnhover4)
+function ProjectUnhover4() {
+    projectDesc4.classList.remove("active")
+    projectImg4.classList.remove("active")
+}
+
 const projectDesc1 = document.getElementById("project-desc1")
 const Project1 = document.getElementById("project1")
 const projectImg1 = document.getElementById("project-img1")
