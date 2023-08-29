@@ -74,8 +74,8 @@ const projectImg5 = document.getElementById("project-img5")
 
 Project5.addEventListener("mouseover", ProjectOverlay5);
     function ProjectOverlay5() {
-    projectDesc4.classList.add("active")
-    projectImg4.classList.add("active")
+    projectDesc5.classList.add("active")
+    projectImg5.classList.add("active")
 }
 
 Project5.addEventListener("mouseout", ProjectUnhover5)
